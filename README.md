@@ -133,22 +133,40 @@ risk_score
 # Architecture de projet
 
 predict-blocus/
-│
+│── airflow/
+|
 ├── data/
+├   |── telegram/
+│   ├── google_news/
+│   ├── unef/
+│   └── union_etudiante/
 │   ├── raw/
 │   └── processed/
 │
 ├── src/
+│
 │   ├── collectors/
+│   │   ├── telegram/
+│   │   ├── news/
+│   │   ├── unef/
+│   │   └── universities/
+│
+│   ├── database/
+│   │   ├── connection.py
+│   │   ├── models.py
+│   │   └── init_db.py
+│
 │   ├── processors/
+│
 │   ├── features/
+│
 │   ├── models/
+│
 │   └── api/
 │
-├── airflow/
-├── notebooks/
 ├── tests/
 │
+├── .env
 ├── .env.example
 ├── .gitignore
 ├── requirements.txt

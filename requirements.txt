@@ -4,6 +4,7 @@ requests
 telethon
 feedparser
 psycopg2-binary
+psycopg
 sqlalchemy
 pandas
 numpy
