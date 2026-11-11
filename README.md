@@ -28,7 +28,7 @@ Interprétation :
 
 ---
 
-# Architecture finale recommandée
+# Architecture
 
 ```text
 Sources (8)
@@ -128,3 +128,30 @@ risk_score
   "status": "Très probable"
 }
 ```
+
+
+# Architecture de projet
+
+predict-blocus/
+│
+├── data/
+│   ├── raw/
+│   └── processed/
+│
+├── src/
+│   ├── collectors/
+│   ├── processors/
+│   ├── features/
+│   ├── models/
+│   └── api/
+│
+├── airflow/
+├── notebooks/
+├── tests/
+│
+├── .env.example
+├── .gitignore
+├── requirements.txt
+├── README.md
+└── docker-compose.yml
+
