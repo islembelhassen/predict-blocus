@@ -63,7 +63,10 @@ class RawEvent(Base):
         nullable=False,
     )
 
-    external_id = Column(String(255))
+    external_id = Column(
+    String(255),
+    unique=True,
+    )
 
     title = Column(Text)
 
@@ -85,7 +88,8 @@ class RawEvent(Base):
 
     language = Column(String(10))
 
-    metadata_json = Column(
+    metadata = Column(
+        "metadata",
         JSONB,
         default=dict,
     )

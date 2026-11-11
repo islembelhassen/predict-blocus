@@ -1,5 +1,5 @@
-from connection import engine
-from models import Base, Source
+from src.database.connection import engine
+from src.database.models import Base, Source
 
 Base.metadata.create_all(bind=engine)
 
@@ -33,7 +33,7 @@ default_sources = [
     {
         "name": "union_etudiante",
         "type": "syndicat",
-        "url": "https://unionetudiante.fr",
+        "url": "https://union-etudiante.fr",
     },
     {
         "name": "france24",

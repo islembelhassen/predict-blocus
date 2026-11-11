@@ -39,3 +39,17 @@ data/processed/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# telegram sessions
+.session
+
+# Data
+data/raw/*
+data/processed/*
+data/exports/*
+
+# Garder l'arborescence
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/exports/.gitkeep
+
